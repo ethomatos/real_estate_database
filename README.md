@@ -13,3 +13,4 @@ A real estate management database scheme that consists of typical real estate ob
   - __Note__: Remember to create the secret and the password.
   - The Kubernetes secret command used is the following:
     - `kubectl create secret generic mysql-root-password --from-literal='password=abcdefg' --namespace="realestate"`
+- **Remember** to apply the persistent volume manifest to the realestate namespace using `kubectl apply -n realestate -f <filename>`.
